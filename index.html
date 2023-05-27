@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/mefavicon-32x32.png">
+  <title>Newsletter sign-up form with success message</title>
+</head>
+<body>
+ <!--normal_state-->
+  <div class="normal_state">
+    <div class="text">
+<h1 id="title_one">Stay updated!</h1>
+<p id="paragraph_title">Join 60,000+ product managers receiving monthly updates on:</p>
+<img id="true_1" src="./assets/images/icon-list.svg" alt="true">
+<p id="paragraph_1">Product discovery and building what matters</p>
+<img id="true_2" src="./assets/images/icon-list.svg" alt="true">
+<p id="paragraph_2">Measuring to ensure updates are a success</p>
+<img id="true_3" src="./assets/images/icon-list.svg" alt="true">
+<p id="paragraph_3">And much more!</p>
+<label id="label"for="email">Email address</label>
+<p id="msg_required">Valid email required</p>
+<input type="email" id="email" name="email" placeholder="email@company.com">
+<button id="submit">Subscribe to monthly newsletter</button>
+    </div>
+    <div class="pic">
+<img id="illustration"src="./assets/images/illustration-sign-up-desktop.svg" alt="illustration">
+    </div>
+    <div class="pic_mobile">
+      <img id="illustration_mob"src="./assets/images/illustration-sign-up-mobile.svg" alt="illustration">
+          </div>
+</div>
+  <!--success state-->
+  <div class="success_state">
+  <img  id="success_icon" src="./assets/images/icon-success.svg" alt="success_icon">
+  <h1 id="msg_thanks">Thanks for subscribing!</h1>
+  <p id="msg_paragraph">A confirmation email has been send to <span id="confirmation_email">ash@loremcompany.com</span>. Please apen it and click the button inside to confirm your subscription.</p>
+  <button id="Dismiss_button">Dismiss message</button>
+  </div>
+  <script src="./app.js"></script>
+</body>
+</html>
