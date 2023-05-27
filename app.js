@@ -3,7 +3,7 @@ const box_email=document.querySelector("#email");
 const stat_normal=document.querySelector(".normal_state");
 const stat_succ=document.querySelector(".success_state");
 const email_js= document.getElementById('email');
-
+const ex_email= document.getElementById('confirmation_email');
 document.getElementById("submit").addEventListener('click', checkmail);
 
 function checkmail(){
@@ -15,6 +15,8 @@ function checkmail(){
     box_email.style.borderColor = "#9294A0"
     stat_normal.style.display="none";
     stat_succ.style.display="block";
+    ex_email.replaceWith(email_js.value);
+    ex_email.style.fontWeight = "700";
   return true;
   }
   else
